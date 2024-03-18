@@ -34,6 +34,7 @@ cloudinaryconnect();
 
 app.get('/',(req,res)=>{
 
+    res.cookie("test","thapa");
     res.send("Hello server")
 })
 

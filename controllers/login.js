@@ -56,7 +56,8 @@ exports.loginuser = async(req,res)=>{
 
         return res.cookie("aircookie",token,{
 
-            expires:new Date(Date.now() + 3600000 )
+            expires:new Date(Date.now() + 3600000 ),
+            httpOnly:true
         })
         .status(200).json({
 
